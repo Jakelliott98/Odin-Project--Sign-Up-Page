@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-colour: ;
+    --text-colour: ;
+    --form-background-colour: ;
+    --cta-background: ;
+
+    --font-size-s: ;
+    --font-size-m: ;
+    --font-size-l: ;
+
+    --size-xs: ;
+    --size-s: ;
+    --size-m: ;
+    --size-l: ;
+    --size-xl: ;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    height: 70vh;
+    width: 80vw;
+    background-color: rebeccapurple;
+}
