@@ -29,7 +29,30 @@ body {
 }
 
 main {
-    height: 70vh;
+    height: 50vh;
     width: 80vw;
-    background-color: rebeccapurple;
+    background-color: rgb(183, 156, 211);
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.imageSide {
+    width: 40%;
+    height: 100%;
+    background-color: rgb(230, 222, 211);
+}
+
+form {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
 }
