@@ -10,9 +10,9 @@
     --form-background-colour: ;
     --cta-background: ;
 
-    --font-size-s: ;
-    --font-size-m: ;
-    --font-size-l: ;
+    --font-size-s: 0.75rem;
+    --font-size-m: 1rem;
+    --font-size-l: 2rem;
 
     --size-xs: ;
     --size-s: ;
@@ -26,33 +26,63 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: Parkinsans;
+    background-color: #EBFAFF;
 }
 
 main {
-    height: 50vh;
+    height: 60vh;
     width: 80vw;
-    background-color: rgb(183, 156, 211);
     display: flex;
     flex-direction: row;
-    border-radius: 10px;
 }
 
 .imageSide {
-    width: 40%;
+    flex: 4;
     height: 100%;
-    background-color: rgb(230, 222, 211);
+    background-image: url(Images/taychin-olanwichitwong-Pf3OeA7tMFk-unsplash.jpg);
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.formSection {
+    flex: 6;
+    padding: 50px;
+    border-radius: 0 10px 10px 0;
+    background-color: white;
 }
 
 form {
-    padding: 50px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: left;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.formInputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.formInputs input {
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form button {
+    padding: 15px;
+    width: 30%;
+    border-radius: 5px;
+    font-size: var(--font-size-m);
 }
 
 .formCard {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 50px;
 }
