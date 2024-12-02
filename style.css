@@ -5,20 +5,20 @@
 }
 
 :root {
-    --background-colour: ;
-    --text-colour: ;
-    --form-background-colour: ;
-    --cta-background: ;
+    --background-colour: #EBFAFF;
+    --text-colour: #2F374B;
+    --form-background-colour: #fff;
+    --cta-background: #2B4570;
 
-    --font-size-s: 0.75rem;
+    --font-size-s: 0.875rem;
     --font-size-m: 1rem;
     --font-size-l: 2rem;
 
-    --size-xs: ;
-    --size-s: ;
-    --size-m: ;
-    --size-l: ;
-    --size-xl: ;
+    --size-xs: 0.313rem;
+    --size-s: 0.625rem;
+    --size-m: 1.25rem;
+    --size-l: 2.5rem;
+    --size-xl: 3.125rem;
 }
 
 body {
@@ -27,7 +27,8 @@ body {
     align-items: center;
     height: 100vh;
     font-family: Parkinsans;
-    background-color: #EBFAFF;
+    color: var(--text-colour);
+    background-color: var(--background-colour);
 }
 
 main {
@@ -58,16 +59,18 @@ form {
     flex-direction: column;
     align-items: left;
     justify-content: space-between;
-    gap: 20px;
+    gap: var(--size-m);
 }
 
 .formInputs {
     display: flex;
     flex-direction: column;
+    font-size: var(--font-size-s);
+    gap: var(--size-xs);
 }
 
 .formInputs input {
-    padding: 5px 10px;
+    padding: 7px 10px;
     border-radius: 4px;
     width: 100%;
 }
@@ -77,6 +80,13 @@ form button {
     width: 30%;
     border-radius: 5px;
     font-size: var(--font-size-m);
+    background-color: var(--cta-background);
+    color: var(--form-background-colour);
+    box-shadow: 1px 1px 3px var(--cta-background);
+}
+
+form button:hover {
+    cursor: pointer;
 }
 
 .formCard {
